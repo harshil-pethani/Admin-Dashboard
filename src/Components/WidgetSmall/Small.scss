@@ -1,0 +1,71 @@
+.widgetSmall {
+  flex: 1;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  margin-right: 20px;
+
+  .title {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .userList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .userListItem {
+    //   border: 2px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
+       
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .userInfo {
+        display: flex;
+        flex-direction: column;
+
+        .username{
+            font-weight: 700;
+        }
+        .fullname{
+            font-size: 14px;
+            color: rgb(114, 114, 114);
+        }
+      }
+
+      .smallBtn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        background-color: teal;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        border: 2px solid teal;
+        transition: all 500ms ease;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border-radius: 5px;
+
+        .icon{
+            margin-right: 10px;
+        }
+
+        &:hover{
+            background-color: white;
+            color: teal;
+        }
+      }
+    }
+  }
+}
