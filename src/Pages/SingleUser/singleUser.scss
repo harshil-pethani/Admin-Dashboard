@@ -1,0 +1,156 @@
+.singleUser {
+  flex: 4;
+  padding: 20px;
+
+  .userTitleContainer {
+    padding: 10px 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  .userContainer {
+    display: flex;
+    margin: 20px 0;
+
+    .userShow {
+      flex: 1;
+      padding: 20px;
+      -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+      .userShowTop {
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 10px;
+        }
+
+        .userInfo {
+          display: flex;
+          flex-direction: column;
+
+          .username {
+            font-weight: 600;
+            font-size: 18px;
+          }
+
+          .fullname {
+            font-weight: 400;
+            color: rgb(151, 151, 151);
+            font-size: 14px;
+          }
+        }
+      }
+
+      .userShowBottom {
+        margin-top: 20px;
+
+        .title {
+          font-size: 14px;
+          font-weight: 600;
+          color: rgb(151, 151, 151);
+        }
+
+        .infoField {
+          display: flex;
+          align-items: center;
+          margin: 20px 0;
+          color: #444;
+
+          .infoFieldIcon {
+            margin-right: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .userUpdate {
+      flex: 2;
+      padding: 20px;
+      margin-left: 20px;
+      -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+      .updateTitle {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      form {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .userUpdateLeft {
+          flex: 2;
+          .userUpdateItem {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 20px;
+            // border: 2px solid red;
+
+            > label {
+              margin-bottom: 5px;
+              font-size: 14px;
+            }
+            input {
+              border: none;
+              min-width: 250px;
+              height: 30px;
+              border-bottom: 1px solid gray;
+              outline: none;
+              padding: 0 10px;
+            }
+          }
+        }
+        .userUpdateRight {
+          display: flex;
+          padding-left: 20px;
+          flex: 1;
+          flex-direction: column;
+          justify-content: space-between;
+          .userUpdateUpload {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 100px;
+              width: 100px;
+              object-fit: cover;
+              border-radius: 50%;
+              margin-right: 20px;
+            }
+            .uploadIcon {
+              cursor: pointer;
+            }
+          }
+          button {
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+            background-color: teal;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border: 2px solid teal;
+            text-transform: uppercase;
+            transition: all 500ms ease;
+
+            &:hover {
+              color: teal;
+              letter-spacing: 2px;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -50,6 +50,7 @@
           font-weight: 600;
           letter-spacing: 1px;
           padding: 5px 0;
+          text-transform: uppercase;
 
           &.Approved {
             background-color: #dcfff2;
@@ -57,7 +58,7 @@
           }
           &.Declined {
             background-color: #ffdfe1;
-            color: #6b0007;
+            color: #d1000e;
           }
           &.Pending {
             background-color: #ffffce;

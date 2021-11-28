@@ -34,7 +34,7 @@ const Users = () => {
             field: 'action', headerName: "Action", width: 150, renderCell: (params) => {
                 return (
                     <>
-                        <NavLink exact to={"/user/" + params.row.id}>
+                        <NavLink exact to={"/users/" + params.row.id}>
                             <button className="edit">
                                 Edit
                             </button>
@@ -46,18 +46,29 @@ const Users = () => {
         }
     ];
 
-    
+
     return (
         <div className="users">
-            <DataGrid
-                disableSelectionOnClick
-                rows={data}
-                columns={columns}
-                pageSize={8}
-                rowsPerPageOptions={[10]}
-                checkboxSelection
-            />
-        </div>
+            <div className="userTitleContainer">
+                <h2 className="ti">
+                    Users
+                </h2>
+                <NavLink exact to="/user/create">
+                    <button className="createBtn">
+                        Create
+                    </button>
+                </NavLink>
+            </div>
+            <div className="userTableContainer" style={{ height: 500, width: '100%' }}>
+                <DataGrid
+                    disableSelectionOnClick
+                    rows={data}
+                    columns={columns}
+                    pageSize={7}
+                    checkboxSelection
+                />
+            </div>
+        </div >
     )
 }
 
