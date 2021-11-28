@@ -13,7 +13,7 @@ import {
     WorkOutline,
     Report,
 } from "@material-ui/icons";
-// import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
     return (
@@ -22,78 +22,98 @@ export default function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        {/* <Link to="/" className="link"> */}
-                            <li className="sidebarListItem active">
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/" activeClassName="active">
                                 <LineStyle className="sidebarIcon" />
                                 Home
-                            </li>
-                        {/* </Link> */}
-                        <li className="sidebarListItem">
-                            <Timeline className="sidebarIcon" />
-                            Analytics
+                            </NavLink>
                         </li>
-                        <li className="sidebarListItem">
-                            <TrendingUp className="sidebarIcon" />
-                            Sales
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/analytics" activeClassName="active">
+                                <Timeline className="sidebarIcon" />
+                                Analytics
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/sales" activeClassName="active">
+                                <TrendingUp className="sidebarIcon" />
+                                Sales
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        {/* <Link to="/users" className="link"> */}
-                            <li className="sidebarListItem">
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/users" activeClassName="active">
                                 <PermIdentity className="sidebarIcon" />
                                 Users
-                            </li>
-                        {/* </Link> */}
-                        {/* <Link to="/products" className="link"> */}
-                            <li className="sidebarListItem">
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/products" activeClassName="active">
                                 <Storefront className="sidebarIcon" />
                                 Products
-                            </li>
-                        {/* </Link> */}
-                        <li className="sidebarListItem">
-                            <AttachMoney className="sidebarIcon" />
-                            Transactions
+                            </NavLink>
                         </li>
-                        <li className="sidebarListItem">
-                            <BarChart className="sidebarIcon" />
-                            Reports
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/transactions" activeClassName="active">
+                                <AttachMoney className="sidebarIcon" />
+                                Transactions
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/reports" activeClassName="active">
+                                <BarChart className="sidebarIcon" />
+                                Reports
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Notifications</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <MailOutline className="sidebarIcon" />
-                            Mail
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/mail" activeClassName="active">
+                                <MailOutline className="sidebarIcon" />
+                                Mail
+                            </NavLink>
                         </li>
-                        <li className="sidebarListItem">
-                            <DynamicFeed className="sidebarIcon" />
-                            Feedback
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/feedback" activeClassName="active">
+                                <DynamicFeed className="sidebarIcon" />
+                                Feedback
+                            </NavLink>
                         </li>
-                        <li className="sidebarListItem">
-                            <ChatBubbleOutline className="sidebarIcon" />
-                            Messages
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/message" activeClassName="active">
+                                <ChatBubbleOutline className="sidebarIcon" />
+                                Messages
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Staff</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <WorkOutline className="sidebarIcon" />
-                            Manage
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/staffmanage" activeClassName="active">
+                                <WorkOutline className="sidebarIcon" />
+                                Manage
+                            </NavLink>
                         </li>
-                        <li className="sidebarListItem">
-                            <Timeline className="sidebarIcon" />
-                            Analytics
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/staffanalytics" activeClassName="active">
+                                <Timeline className="sidebarIcon" />
+                                Analytics
+                            </NavLink>
                         </li>
-                        <li className="sidebarListItem">
-                            <Report className="sidebarIcon" />
-                            Reports
+                        <li>
+                            <NavLink className="sidebarListItem" exact to="/staffreports" activeClassName="active">
+                                <Report className="sidebarIcon" />
+                                Reports
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
