@@ -33,9 +33,7 @@
           &.active,
           &:hover {
             background-color: rgb(240, 240, 255);
-          }
-
-          .active {
+            color: teal;
             width: 100%;
             background-color: rgb(240, 240, 255);
             display: flex;
