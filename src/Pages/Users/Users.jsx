@@ -5,9 +5,6 @@ import { userRows } from "../../Data";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
-
-
-
 const Users = () => {
     const [data, setData] = useState(userRows);
 
@@ -27,14 +24,15 @@ const Users = () => {
                 )
             }
         },
-        { field: 'email', headerName: 'Email', width: 300 },
+        { field: 'email', headerName: 'Email', width: 200 },
+        { field: 'firstname', headerName: "First Name", width: 150 },
+        { field: 'lastname', headerName: "Last Name", width: 150 },
         { field: 'status', headerName: 'Status', width: 130, },
-        { field: 'transaction', headerName: "Transaction", width: 200 },
         {
             field: 'action', headerName: "Action", width: 150, renderCell: (params) => {
                 return (
                     <>
-                        <NavLink exact to={"/users/" + params.row.id}>
+                        <NavLink to={"/users/" + params.row.id}>
                             <button className="edit">
                                 Edit
                             </button>
@@ -53,7 +51,7 @@ const Users = () => {
                 <h2 className="ti">
                     Users
                 </h2>
-                <NavLink exact to="/user/create">
+                <NavLink to="/user/create">
                     <button className="createBtn">
                         Create
                     </button>

@@ -1,6 +1,7 @@
 import "./Small.scss";
 import { Visibility } from "@material-ui/icons";
 import { userRows } from '../../Data';
+import { NavLink } from "react-router-dom";
 
 const WidgetSmall = () => {
     return (
@@ -13,19 +14,23 @@ const WidgetSmall = () => {
                     userRows.map((element) =>
                     (
                         <li className="userListItem" key={element.id}>
-                            <img src={element.avatar} alt="" className="userImg" />
-                            <div className="userInfo">
-                                <span className="username">
-                                    {element.username}
-                                </span>
-                                <span className="fullname">
-                                    Jannat Zubair Rehmani
-                                </span>
+                            <div className="AvatarName">
+                                <img src={element.avatar} alt="" className="userImg" />
+                                <div className="userInfo">
+                                    <span className="username">
+                                        {element.username}
+                                    </span>
+                                    <span className="fullname">
+                                        {element.fullname}
+                                    </span>
+                                </div>
                             </div>
-                            <button className="smallBtn">
-                                <Visibility className="icon" />
-                                View
-                            </button>
+                            <NavLink className="link" to={"/users/" + element.id}>
+                                <button className="smallBtn">
+                                    <Visibility className="icon" />
+                                    View
+                                </button>
+                            </NavLink>
                         </li>
                     ))
                 }

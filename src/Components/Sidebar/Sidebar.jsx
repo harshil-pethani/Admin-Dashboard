@@ -23,19 +23,19 @@ export default function Sidebar() {
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/">
                                 <LineStyle className="sidebarIcon" />
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/analytics" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/analytics">
                                 <Timeline className="sidebarIcon" />
                                 Analytics
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/sales" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/sales">
                                 <TrendingUp className="sidebarIcon" />
                                 Sales
                             </NavLink>
@@ -46,25 +46,25 @@ export default function Sidebar() {
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/users" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/users">
                                 <PermIdentity className="sidebarIcon" />
                                 Users
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/products" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/products">
                                 <Storefront className="sidebarIcon" />
                                 Products
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/transactions" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/transactions">
                                 <AttachMoney className="sidebarIcon" />
                                 Transactions
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/reports" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/reports">
                                 <BarChart className="sidebarIcon" />
                                 Reports
                             </NavLink>
@@ -75,19 +75,19 @@ export default function Sidebar() {
                     <h3 className="sidebarTitle">Notifications</h3>
                     <ul className="sidebarList">
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/mail" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/mail">
                                 <MailOutline className="sidebarIcon" />
                                 Mail
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/feedback" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/feedback">
                                 <DynamicFeed className="sidebarIcon" />
                                 Feedback
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/message" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/message">
                                 <ChatBubbleOutline className="sidebarIcon" />
                                 Messages
                             </NavLink>
@@ -98,19 +98,19 @@ export default function Sidebar() {
                     <h3 className="sidebarTitle">Staff</h3>
                     <ul className="sidebarList">
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/staffmanage" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/staffmanage">
                                 <WorkOutline className="sidebarIcon" />
                                 Manage
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/staffanalytics" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/staffanalytics">
                                 <Timeline className="sidebarIcon" />
                                 Analytics
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" exact to="/staffreports" activeClassName="active">
+                            <NavLink className="sidebarListItem" to="/staffreports">
                                 <Report className="sidebarIcon" />
                                 Reports
                             </NavLink>
