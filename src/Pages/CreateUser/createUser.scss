@@ -1,0 +1,107 @@
+.createUser {
+  flex: 4;
+  padding: 20px;
+
+  .pageTitle {
+    padding: 10px 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  .newUserForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 70px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    margin-top: 20px;
+    .formItem {
+      width: 500px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-right: 20px;
+
+      &.profile {
+        // > label {
+        //   margin: 0;
+        // }
+        .iconLabel {
+          border: 1px solid gray;
+          height: 35px;
+          width: 100%;
+          margin: 0;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .icon {
+            width: 40px;
+          }
+        }
+        .iconLabel:hover {
+          border: 2px solid teal;
+        }
+      }
+
+      > label {
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: gray;
+      }
+
+      input,
+      select {
+        padding: 0 10px;
+        border: 1px solid gray;
+        height: 35px;
+        outline: none;
+        &:focus {
+          border: 2px solid teal;
+        }
+      }
+
+      .genderBtns {
+        // border: 2px solid red;
+        display: flex;
+        align-items: center;
+        height: 35px;
+        justify-content: flex-start;
+
+        > label {
+          margin-right: 20px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .btnContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .createBtn {
+        width: 200px;
+        border: 2px solid teal;
+        margin: 20px 0;
+        padding: 7px;
+        background: teal;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 500ms ease;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        &:hover {
+          background: white;
+          color: teal;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}

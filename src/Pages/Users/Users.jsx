@@ -53,7 +53,9 @@ const Users = () => {
                 </h2>
                 <NavLink to="/user/create">
                     <button className="createBtn">
-                        Create
+                        <NavLink className="link" to="/users/create">
+                            Add
+                        </NavLink>
                     </button>
                 </NavLink>
             </div>
