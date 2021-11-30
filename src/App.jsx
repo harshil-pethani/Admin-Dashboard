@@ -1,11 +1,12 @@
 import './App.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Topbar from './Components/Topbar/Topbar';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Home from './Pages/Home/Home';
 import Users from './Pages/Users/Users';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import SingleUser from './Pages/SingleUser/SingleUser';
+import UpdateUser from './Pages/UpdateUser/UpdateUser';
 import CreateUser from './Pages/CreateUser/CreateUser';
+import Products from './Pages/Products/Products';
 
 function App() {
   return (
@@ -17,8 +18,11 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/users" exact element={<Users />} />
-          <Route path="/users/:userId" exact element={<SingleUser />} />
+          <Route path="/users/:userId" exact element={<UpdateUser />} />
           <Route path="/users/create" exact element={<CreateUser />} />
+          <Route path="/products" exact element={<Products />} />
+          <Route path="/products/:productId" exact element={<Products />} />
+          <Route path="/products/create" exact element={<Products />} />
         </Routes>
       </div>
     </BrowserRouter>

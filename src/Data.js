@@ -131,3 +131,46 @@ export const userRows = [
         orderAmount: '40'
     },
 ];
+
+export const productRows = [
+    {
+        id: 1,
+        name: "T-shirt",
+        img: "https://i.pinimg.com/originals/62/98/b0/6298b026a65cf80bcf9dce061e9b79c9.png",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
+    {
+        id: 2,
+        name: "Shirt",
+        img: "https://www.pngall.com/wp-content/uploads/5/Shirt-PNG-Images.png",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
+    {
+        id: 3,
+        name: "Hoodie",
+        img: "https://spng.pngfind.com/pngs/s/10-101580_limited-edition-snowflake-lined-hoodie-hoodie-hd-png.png",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
+    {
+        id: 4,
+        name: "Blazer",
+        img: "https://www.pngall.com/wp-content/uploads/2016/09/Blazer-PNG-Clipart.png",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
+    {
+        id: 5,
+        name: "Jeans", 
+        img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    }
+]

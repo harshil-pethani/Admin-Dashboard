@@ -1,12 +1,12 @@
-import './Users.scss';
+import { useState } from "react";
 import { DataGrid } from '@mui/x-data-grid';
-import { DeleteOutline } from '@material-ui/icons'
-import { userRows } from "../../Data";
-import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { productRows } from "../../Data";
+import { NavLink } from "react-router-dom";
+import "./products.scss";
+import { DeleteOutline } from "@material-ui/icons";
 
-const Users = () => {
-    const [data, setData] = useState(userRows);
+const Products = () => {
+    const [data, setData] = useState(productRows);
 
     const handleDelete = (id) => {
         setData(data.filter(item => item.id !== id))
@@ -15,24 +15,23 @@ const Users = () => {
     const columns = [
         { field: 'id', headerName: 'ID', width: 100 },
         {
-            field: 'user', headerName: 'User', width: 200, renderCell: (params) => {
+            field: 'name', headerName: 'Name', width: 300, renderCell: (params) => {
                 return (
                     <div className="userField">
-                        <img src={params.row.avatar} alt="" />
-                        {params.row.username}
+                        <img src={params.row.img} alt="" />
+                        {params.row.name}
                     </div>
                 )
             }
         },
-        { field: 'email', headerName: 'Email', width: 200 },
-        { field: 'firstname', headerName: "First Name", width: 150 },
-        { field: 'lastname', headerName: "Last Name", width: 150 },
-        { field: 'status', headerName: 'Status', width: 130, },
+        { field: 'stock', headerName: 'Stock', width: 170 },
+        { field: 'status', headerName: 'Status', width: 170, },
+        { field: 'price', headerName: "Price", width: 170 },
         {
-            field: 'action', headerName: "Action", width: 150, renderCell: (params) => {
+            field: 'action', headerName: "Action", width: 170, renderCell: (params) => {
                 return (
                     <>
-                        <NavLink to={"/users/" + params.row.id}>
+                        <NavLink to={"/products/" + params.row.id}>
                             <button className="edit">
                                 Edit
                             </button>
@@ -42,17 +41,16 @@ const Users = () => {
                 )
             }
         }
-    ];
-
+    ]
 
     return (
-        <div className="users">
-            <div className="userTitleContainer">
-                <h2 className="ti">
-                    Users
+        <div className="products">
+            <div className="pageTitleContainer">
+                <h2 className="title">
+                    Products
                 </h2>
                 <button className="createBtn">
-                    <NavLink className="link" to="/users/create">
+                    <NavLink className="link" to="/products/create">
                         Add
                     </NavLink>
                 </button>
@@ -66,8 +64,8 @@ const Users = () => {
                     checkboxSelection
                 />
             </div>
-        </div >
+        </div>
     )
 }
 
-export default Users
+export default Products

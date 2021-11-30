@@ -1,0 +1,64 @@
+.products {
+    flex: 4;
+    padding: 20px;
+    .pageTitleContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  
+      .createBtn {
+        background-color: teal;
+        color: white;
+        border: 2px solid teal;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 500ms ease;
+        width: 100px;
+        border-radius: 5px;
+        text-transform: uppercase;
+  
+        &:hover {
+          letter-spacing: 2px;
+          background-color: white;
+          color: teal;
+        }
+      }
+    }
+  
+    .userTableContainer {
+      -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    }
+  
+    .userField {
+      display: flex;
+      align-items: center;
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+    }
+  
+    .edit {
+      border: none;
+      border-radius: 5px;
+      padding: 5px 20px;
+      background-color: #3bb077;
+      cursor: pointer;
+      color: white;
+      margin-right: 20px;
+    }
+    .delete {
+      color: #cf0000;
+      cursor: pointer;
+    }
+  }
+  

@@ -1,16 +1,16 @@
-import './singleUser.scss';
+import './updateUser.scss';
 import { CalendarToday, LocationCityOutlined, MailOutline, PermIdentity, PhoneAndroid, Publish } from '@material-ui/icons'
 import { userRows } from '../../Data';
 import { useLocation } from 'react-router-dom';
 
 
-const SingleUser = ({ id }) => {
+const UpdateUser = ({ id }) => {
     const location = useLocation();
     const userId = location.pathname.split('/')[2];
 
     let user = userRows.filter(element => element.id == userId)[0]
     return (
-        <div className="singleUser">
+        <div className="updateUser">
             <div className="userTitleContainer">
                 <h2 className="ti">
                     Edit User
@@ -127,4 +127,4 @@ const SingleUser = ({ id }) => {
     )
 }
 
-export default SingleUser
+export default UpdateUser
