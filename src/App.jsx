@@ -7,6 +7,8 @@ import Users from './Pages/Users/Users';
 import UpdateUser from './Pages/UpdateUser/UpdateUser';
 import CreateUser from './Pages/CreateUser/CreateUser';
 import Products from './Pages/Products/Products';
+import UpdateProduct from './Pages/UpdateProduct/UpdateProduct';
+import CreateProduct from './Pages/CreateProduct/CreateProduct';
 
 function App() {
   return (
@@ -21,8 +23,8 @@ function App() {
           <Route path="/users/:userId" exact element={<UpdateUser />} />
           <Route path="/users/create" exact element={<CreateUser />} />
           <Route path="/products" exact element={<Products />} />
-          <Route path="/products/:productId" exact element={<Products />} />
-          <Route path="/products/create" exact element={<Products />} />
+          <Route path="/products/:productId" exact element={<UpdateProduct />} />
+          <Route path="/products/create" exact element={<CreateProduct />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -6,13 +6,14 @@ import { useLocation } from 'react-router-dom';
 
 const UpdateUser = ({ id }) => {
     const location = useLocation();
-    const userId = location.pathname.split('/')[2];
+    let userId = location.pathname.split('/')[2];
+    userId = parseInt(userId);
 
-    let user = userRows.filter(element => element.id == userId)[0]
+    let user = userRows.filter(element => element.id === userId)[0];
     return (
         <div className="updateUser">
             <div className="userTitleContainer">
-                <h2 className="ti">
+                <h2 className="title">
                     Edit User
                 </h2>
             </div>

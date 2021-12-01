@@ -49,11 +49,11 @@ const Products = () => {
                 <h2 className="title">
                     Products
                 </h2>
-                <button className="createBtn">
-                    <NavLink className="link" to="/products/create">
+                <NavLink className="link" to="/products/create">
+                    <button className="createBtn">
                         Add
-                    </NavLink>
-                </button>
+                    </button>
+                </NavLink>
             </div>
             <div className="userTableContainer" style={{ height: 500, width: '100%' }}>
                 <DataGrid

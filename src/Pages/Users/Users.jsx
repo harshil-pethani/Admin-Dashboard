@@ -51,11 +51,11 @@ const Users = () => {
                 <h2 className="ti">
                     Users
                 </h2>
-                <button className="createBtn">
-                    <NavLink className="link" to="/users/create">
+                <NavLink className="link" to="/users/create">
+                    <button className="createBtn">
                         Add
-                    </NavLink>
-                </button>
+                    </button>
+                </NavLink>
             </div>
             <div className="userTableContainer" style={{ height: 500, width: '100%' }}>
                 <DataGrid
