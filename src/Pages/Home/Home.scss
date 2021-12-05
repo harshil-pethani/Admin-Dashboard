@@ -1,10 +1,11 @@
-.home{
-    flex: 4;
-    padding: 20px;
-    // border: 2px solid red;
+.home {
+  // flex: 4;
+  width: calc(100vw - 100px);
+  padding: 20px;
+  // border: 2px solid red;
 
-    .homeWidgets{
-        display: flex;
-        margin: 20px;
-    }
+  .homeWidgets {
+    display: flex;
+    margin: 20px 0;
+  }
 }

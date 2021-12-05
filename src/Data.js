@@ -186,5 +186,53 @@ export const productRows = [
         stock: 100,
         status: "active",
         price: "120.00"
-    }
+    },
+    {
+        id: 6,
+        name: "Jeans", 
+        img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
+    {
+        id: 7,
+        name: "Jeans", 
+        img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
+    {
+        id: 8,
+        name: "Jeans", 
+        img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
+    {
+        id: 9,
+        name: "Jeans", 
+        img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
+    {
+        id: 10,
+        name: "Jeans", 
+        img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
+    {
+        id: 11,
+        name: "Jeans", 
+        img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        stock: 100,
+        status: "active",
+        price: "120.00"
+    },
 ]

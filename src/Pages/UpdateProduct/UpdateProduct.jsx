@@ -1,18 +1,18 @@
 import './updateProduct.scss'
-import { CalendarToday, LocationCityOutlined, MailOutline, PermIdentity, PhoneAndroid, Publish } from '@material-ui/icons'
+import { Publish } from '@material-ui/icons'
 import { productRows } from '../../Data';
 import { useLocation } from 'react-router-dom';
 import Chart from '../../Components/Chart/Chart';
 import { productSalesData } from '../../Data';
 
-const UpdateProduct = () => {
+const UpdateProduct = ({ activeSidebar }) => {
     const location = useLocation();
     let productId = location.pathname.split('/')[2];
     productId = parseInt(productId);
     let product = productRows.filter(element => element.id === productId)[0];
 
     return (
-        <div className="updateProduct">
+        <div className={activeSidebar ? "updateProduct pageContent" : "updateProduct"}>
             <div className="pageTitleContainer">
                 <h2 className="title">
                     Edit Product

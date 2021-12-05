@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import "./products.scss";
 import { DeleteOutline } from "@material-ui/icons";
 
-const Products = () => {
+const Products = ({ activeSidebar }) => {
     const [data, setData] = useState(productRows);
 
     const handleDelete = (id) => {
@@ -44,7 +44,7 @@ const Products = () => {
     ]
 
     return (
-        <div className="products">
+        <div className={activeSidebar ? "products pageContent" : "products"}>
             <div className="pageTitleContainer">
                 <h2 className="title">
                     Products

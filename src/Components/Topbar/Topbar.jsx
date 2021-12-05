@@ -1,13 +1,19 @@
 import './Topbar.scss';
 import React from 'react';
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
+import { NotificationsNone, Language, Settings, Menu } from "@material-ui/icons";
+import { NavLink } from 'react-router-dom';
 
-const Topbar = () => {
+const Topbar = ({ activeSidebar, setActiveSidebar }) => {
     return (
-        <div className="topbar">
+        <div className={activeSidebar ? "topbar activeSidebar" : "topbar"}>
             <div className="topbarWrapper">
                 <div className="topLeft">
-                    <span className="logo">HpAdmin</span>
+                    <div className="hamburger">
+                        <Menu className="icon" onClick={() => { setActiveSidebar(!activeSidebar) }} />
+                    </div>
+                    <NavLink to="/" className="link">
+                        <span className="logo">HpAdmin</span>
+                    </NavLink>
                 </div>
                 <div className="topRight">
                     <div className="topbarIconContainer">

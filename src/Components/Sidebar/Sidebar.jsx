@@ -15,9 +15,9 @@ import {
 } from "@material-ui/icons";
 import { NavLink } from "react-router-dom";
 
-export default function Sidebar() {
+export default function Sidebar({ activeSidebar, setActiveSidebar }) {
     return (
-        <div className="sidebar">
+        <div className={activeSidebar ? "sidebar activeSidebar" : "sidebar"}>
             <div className="sidebarWrapper">
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
@@ -25,19 +25,25 @@ export default function Sidebar() {
                         <li>
                             <NavLink className="sidebarListItem" to="/">
                                 <LineStyle className="sidebarIcon" />
-                                Home
+                                <span>
+                                    Home
+                                </span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink className="sidebarListItem" to="/analytics">
                                 <Timeline className="sidebarIcon" />
-                                Analytics
+                                <span>
+                                    Analytics
+                                </span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink className="sidebarListItem" to="/sales">
                                 <TrendingUp className="sidebarIcon" />
-                                Sales
+                                <span>
+                                    Sales
+                                </span>
                             </NavLink>
                         </li>
                     </ul>
@@ -48,25 +54,33 @@ export default function Sidebar() {
                         <li>
                             <NavLink className="sidebarListItem" to="/users">
                                 <PermIdentity className="sidebarIcon" />
-                                Users
+                                <span>
+                                    Users
+                                </span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink className="sidebarListItem" to="/products">
                                 <Storefront className="sidebarIcon" />
-                                Products
+                                <span>
+                                    Products
+                                </span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink className="sidebarListItem" to="/transactions">
                                 <AttachMoney className="sidebarIcon" />
-                                Transactions
+                                <span>
+                                    Transactions
+                                </span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink className="sidebarListItem" to="/reports">
                                 <BarChart className="sidebarIcon" />
-                                Reports
+                                <span>
+                                    Reports
+                                </span>
                             </NavLink>
                         </li>
                     </ul>
@@ -77,46 +91,58 @@ export default function Sidebar() {
                         <li>
                             <NavLink className="sidebarListItem" to="/mail">
                                 <MailOutline className="sidebarIcon" />
-                                Mail
+                                <span>
+                                    Mail
+                                </span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink className="sidebarListItem" to="/feedback">
                                 <DynamicFeed className="sidebarIcon" />
-                                Feedback
+                                <span>
+                                    Feedback
+                                </span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" to="/message">
+                            <NavLink className="sidebarListItem" to="/messages">
                                 <ChatBubbleOutline className="sidebarIcon" />
-                                Messages
+                                <span>
+                                    Messages
+                                </span>
                             </NavLink>
                         </li>
                     </ul>
                 </div>
-                <div className="sidebarMenu">
+                {/* <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Staff</h3>
                     <ul className="sidebarList">
                         <li>
                             <NavLink className="sidebarListItem" to="/staffmanage">
                                 <WorkOutline className="sidebarIcon" />
-                                Manage
+                                <span>
+                                    Manage
+                                </span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink className="sidebarListItem" to="/staffanalytics">
                                 <Timeline className="sidebarIcon" />
-                                Analytics
+                                <span>
+                                    Analytics
+                                </span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink className="sidebarListItem" to="/staffreports">
                                 <Report className="sidebarIcon" />
-                                Reports
+                                <span>
+                                    Reports
+                                </span>
                             </NavLink>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </div>
     );

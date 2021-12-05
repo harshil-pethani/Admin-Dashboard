@@ -5,7 +5,7 @@ import { userRows } from "../../Data";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
-const Users = () => {
+const Users = ({ activeSidebar }) => {
     const [data, setData] = useState(userRows);
 
     const handleDelete = (id) => {
@@ -46,7 +46,7 @@ const Users = () => {
 
 
     return (
-        <div className="users">
+        <div className={activeSidebar ? "users pageContent" : "users"}>
             <div className="userTitleContainer">
                 <h2 className="ti">
                     Users

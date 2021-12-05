@@ -1,6 +1,8 @@
 .users {
-  flex: 4;
+  // flex: 4;
+  width: calc(100vw - 100px);
   padding: 20px;
+
   .userTitleContainer {
     display: flex;
     align-items: center;

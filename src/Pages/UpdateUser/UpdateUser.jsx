@@ -4,14 +4,14 @@ import { userRows } from '../../Data';
 import { useLocation } from 'react-router-dom';
 
 
-const UpdateUser = ({ id }) => {
+const UpdateUser = ({ id, activeSidebar }) => {
     const location = useLocation();
     let userId = location.pathname.split('/')[2];
     userId = parseInt(userId);
 
     let user = userRows.filter(element => element.id === userId)[0];
     return (
-        <div className="updateUser">
+        <div className={activeSidebar ? "updateUser pageContent" : "updateUser"}>
             <div className="userTitleContainer">
                 <h2 className="title">
                     Edit User

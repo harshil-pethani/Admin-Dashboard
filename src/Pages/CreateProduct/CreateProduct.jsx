@@ -1,9 +1,9 @@
 import './createProduct.scss';
 import { CloudUpload } from '@material-ui/icons'
 
-const CreateProduct = () => {
+const CreateProduct = ({ activeSidebar }) => {
     return (
-        <div className="createProduct">
+        <div className={activeSidebar ? "createProduct pageContent" : "createProduct"}>
             <h2 className="pageTitle">
                 Create Product
             </h2>

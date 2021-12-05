@@ -1,5 +1,6 @@
 .updateProduct {
-  flex: 4;
+  // flex: 4;
+  width: calc(100vw - 100px);
   padding: 20px;
 
   .pageTitleContainer {
@@ -10,7 +11,7 @@
 
   .productTop {
     display: flex;
-    padding: 0; 
+    padding: 0;
     margin-top: 20px;
     flex-wrap: wrap;
     .productTopLeft {
