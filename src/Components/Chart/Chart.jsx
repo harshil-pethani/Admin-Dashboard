@@ -10,7 +10,7 @@ const Chart = ({ title, data, dataKey, grid }) => {
             <h3 className="chartTitle">
                 {title}
             </h3>
-            <ResponsiveContainer width="100%" aspect={4 / 1}>
+            <ResponsiveContainer width="99%" aspect={4 / 1}>
                 <LineChart data={data} margin={{left: 15, right: 30}}>
                     <Line type="monotone" dataKey={dataKey} stroke="#5550bd" />
                     <Tooltip />
