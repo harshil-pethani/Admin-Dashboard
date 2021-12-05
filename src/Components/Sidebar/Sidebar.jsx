@@ -12,6 +12,7 @@ import {
     ChatBubbleOutline,
     WorkOutline,
     Report,
+    Home,
 } from "@material-ui/icons";
 import { NavLink } from "react-router-dom";
 
@@ -24,7 +25,7 @@ export default function Sidebar({ activeSidebar, setActiveSidebar }) {
                     <ul className="sidebarList">
                         <li>
                             <NavLink className="sidebarListItem" to="/">
-                                <LineStyle className="sidebarIcon" />
+                                <Home className="sidebarIcon" />
                                 <span>
                                     Home
                                 </span>
