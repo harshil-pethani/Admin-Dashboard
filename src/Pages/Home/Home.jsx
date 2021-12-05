@@ -10,7 +10,7 @@ const Home = ({ activeSidebar }) => {
     return (
         <div className={activeSidebar ? "home pageContent" : "home"}>
             <FeaturedInfo />
-            {/* <Chart data={userData} title="User Analytics" grid dataKey="Active User" /> */}
+            <Chart data={userData} title="User Analytics" grid dataKey="Active User" />
             <div className="homeWidgets">
                 <WidgetSmall />
                 <WidgetLarge />
