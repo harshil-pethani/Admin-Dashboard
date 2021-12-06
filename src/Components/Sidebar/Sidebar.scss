@@ -5,7 +5,7 @@
   background-color: rgb(247, 241, 241);
   background-color: white;
   // background-color: rgb(238, 255, 255);
-  box-shadow: 5px 0 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 60px;
   transition: all 500ms ease;
@@ -13,14 +13,16 @@
 
   &.activeSidebar {
     width: 250px !important;
-    background-color: teal;
+    // background-color: teal;
 
     .sidebarWrapper {
       color: white;
       padding: 20px;
+      padding-top: 30px;
       .sidebarMenu {
         .sidebarTitle {
           color: rgb(228, 228, 228);
+          color: rgb(190, 190, 190);
           display: block;
         }
         .sidebarList {
@@ -31,12 +33,16 @@
 
             > span {
               display: block;
+              color: rgb(68, 68, 68);
             }
-            color: white;
+            // color: white;
 
             &.active,
             &:hover {
-              background-color: white;
+              > span {
+                color: teal;
+              }
+              // background-color: white;
             }
             .sidebarIcon {
               margin-right: 5px;
@@ -50,7 +56,7 @@
 
   .sidebarWrapper {
     padding: 10px;
-    padding-top: 20px;
+    padding-top: 30px;
     color: #555;
     transition: color 500ms ease;
 
