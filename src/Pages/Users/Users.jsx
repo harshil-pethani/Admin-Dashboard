@@ -24,9 +24,12 @@ const Users = ({ activeSidebar }) => {
                 )
             }
         },
-        { field: 'email', headerName: 'Email', width: 200 },
         { field: 'firstname', headerName: "First Name", width: 150 },
         { field: 'lastname', headerName: "Last Name", width: 150 },
+        { field: 'email', headerName: 'Email', width: 200 },
+        { field: 'mobile', headerName: 'Mobile No.', width: 150 },
+        { field: 'dob', headerName: 'Date Of Birth', width: 150 },
+        { field: 'address', headerName: 'Address', width: 200 },
         { field: 'status', headerName: 'Status', width: 130, },
         {
             field: 'action', headerName: "Action", width: 150, renderCell: (params) => {

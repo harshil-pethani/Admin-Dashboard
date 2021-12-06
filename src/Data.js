@@ -48,6 +48,7 @@ export const userData = [
         "Active User": 3701
     },
 ];
+
 export const productSalesData = [
     {
         name: 'Jan',
@@ -70,12 +71,12 @@ export const userRows = [
         fullname: 'Jannat Patel',
         avatar: 'https://www.imaginetricks.com/wp-content/uploads/2017/08/Cool-Profile-Pictures.jpg',
         email: 'jannatpatel@gmail.com',
+        firstname: 'Jannat',
+        lastname: 'Zubair',
+        status: 'active',
         dob: '20-12-2001',
         mobile: '123 456 7890',
         address: 'New York | USA',
-        status: 'active',
-        firstname: 'Jannat',
-        lastname: 'Zubair',
         orderStatus: 'Approved',
         orderDate: '26 Nov 2021',
         orderAmount: '120'
@@ -151,6 +152,8 @@ export const productRows = [
         id: 1,
         name: "T-shirt",
         img: "https://i.pinimg.com/originals/62/98/b0/6298b026a65cf80bcf9dce061e9b79c9.png",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
@@ -159,6 +162,8 @@ export const productRows = [
         id: 2,
         name: "Shirt",
         img: "https://www.pngall.com/wp-content/uploads/5/Shirt-PNG-Images.png",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
@@ -167,6 +172,8 @@ export const productRows = [
         id: 3,
         name: "Hoodie",
         img: "https://spng.pngfind.com/pngs/s/10-101580_limited-edition-snowflake-lined-hoodie-hoodie-hd-png.png",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
@@ -175,62 +182,78 @@ export const productRows = [
         id: 4,
         name: "Blazer",
         img: "https://www.pngall.com/wp-content/uploads/2016/09/Blazer-PNG-Clipart.png",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
     },
     {
         id: 5,
-        name: "Jeans", 
+        name: "Jeans",
         img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
     },
     {
         id: 6,
-        name: "Jeans", 
+        name: "Jeans",
         img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
     },
     {
         id: 7,
-        name: "Jeans", 
+        name: "Jeans",
         img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
     },
     {
         id: 8,
-        name: "Jeans", 
+        name: "Jeans",
         img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
     },
     {
         id: 9,
-        name: "Jeans", 
+        name: "Jeans",
         img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
     },
     {
         id: 10,
-        name: "Jeans", 
+        name: "Jeans",
         img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"
     },
     {
         id: 11,
-        name: "Jeans", 
+        name: "Jeans",
         img: "https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg",
+        colors: ["Red", "Black", "Blue"],
+        size: ["S", "M", "L", "XL"],
         stock: 100,
         status: "active",
         price: "120.00"

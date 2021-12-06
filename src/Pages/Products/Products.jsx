@@ -15,7 +15,7 @@ const Products = ({ activeSidebar }) => {
     const columns = [
         { field: 'id', headerName: 'ID', width: 100 },
         {
-            field: 'name', headerName: 'Name', width: 300, renderCell: (params) => {
+            field: 'name', headerName: 'Name', width: 250, renderCell: (params) => {
                 return (
                     <div className="userField">
                         <img src={params.row.img} alt="" />
@@ -24,6 +24,8 @@ const Products = ({ activeSidebar }) => {
                 )
             }
         },
+        { field: 'colors', headerName: 'Colors', width: 170 },
+        { field: 'size', headerName: 'Size', width: 170 },
         { field: 'stock', headerName: 'Stock', width: 170 },
         { field: 'status', headerName: 'Status', width: 170, },
         { field: 'price', headerName: "Price", width: 170 },

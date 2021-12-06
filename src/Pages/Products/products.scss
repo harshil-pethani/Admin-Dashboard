@@ -49,13 +49,19 @@
   }
 
   .edit {
-    border: none;
+    border: 2px solid #00b45d;
     border-radius: 5px;
     padding: 5px 20px;
-    background-color: #3bb077;
+    background-color: #00b45d;
     cursor: pointer;
     color: white;
     margin-right: 20px;
+    transition: all 300ms ease;
+
+    &:hover{
+      background-color: white;
+      color: #00b45d;
+    }
   }
   .delete {
     color: #cf0000;
