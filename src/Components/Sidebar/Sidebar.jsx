@@ -1,11 +1,9 @@
 import "./Sidebar.scss";
 import {
-    LineStyle,
     Timeline,
     TrendingUp,
     PermIdentity,
     Storefront,
-    AttachMoney,
     BarChart,
     MailOutline,
     DynamicFeed,
@@ -13,6 +11,8 @@ import {
     WorkOutline,
     Report,
     Home,
+    LocalMallOutlined,
+    HomeOutlined,
 } from "@material-ui/icons";
 import { NavLink } from "react-router-dom";
 
@@ -25,7 +25,7 @@ export default function Sidebar({ activeSidebar, setActiveSidebar }) {
                     <ul className="sidebarList">
                         <li>
                             <NavLink className="sidebarListItem" to="/">
-                                <Home className="sidebarIcon" />
+                                <HomeOutlined className="sidebarIcon" />
                                 <span>
                                     Home
                                 </span>
@@ -69,10 +69,10 @@ export default function Sidebar({ activeSidebar, setActiveSidebar }) {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="sidebarListItem" to="/transactions">
-                                <AttachMoney className="sidebarIcon" />
+                            <NavLink className="sidebarListItem" to="/orders">
+                                <LocalMallOutlined className="sidebarIcon" />
                                 <span>
-                                    Transactions
+                                    Orders
                                 </span>
                             </NavLink>
                         </li>

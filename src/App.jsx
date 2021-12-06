@@ -11,13 +11,15 @@ import UpdateProduct from './Pages/UpdateProduct/UpdateProduct';
 import CreateProduct from './Pages/CreateProduct/CreateProduct';
 import Analytics from './Pages/Analytics/Analytics';
 import Sales from './Pages/Sales/Sales';
-import Transactions from './Pages/Transactions/Transactions';
+import Orders from './Pages/Orders/Orders';
 import Reports from './Pages/Report/Reports';
 import Mail from './Pages/Mail/Mail';
 import Feedback from './Pages/Feedback/Feedback';
 import Messages from './Pages/Messages/Messages';
+import UpdateProfile from './Pages/UpdateProfile/UpdateProfile';
 
 import { useState } from 'react';
+
 function App() {
   const [activeSidebar, setActiveSidebar] = useState(false);
   return (
@@ -36,11 +38,12 @@ function App() {
           <Route path="/products/create" exact element={<CreateProduct activeSidebar={activeSidebar} />} />
           <Route path="/analytics" exact element={<Analytics activeSidebar={activeSidebar} />} />
           <Route path="/sales" exact element={<Sales activeSidebar={activeSidebar} />} />
-          <Route path="/transactions" exact element={<Transactions activeSidebar={activeSidebar} />} />
+          <Route path="/orders" exact element={<Orders activeSidebar={activeSidebar} />} />
           <Route path="/reports" exact element={<Reports activeSidebar={activeSidebar} />} />
           <Route path="/mail" exact element={<Mail activeSidebar={activeSidebar} />} />
           <Route path="/feedback" exact element={<Feedback activeSidebar={activeSidebar} />} />
           <Route path="/messages" exact element={<Messages activeSidebar={activeSidebar} />} />
+          <Route path="/updateprofile" exact element={<UpdateProfile activeSidebar={activeSidebar} />} />
         </Routes>
       </div>
     </BrowserRouter>

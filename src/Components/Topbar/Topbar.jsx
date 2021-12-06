@@ -27,7 +27,9 @@ const Topbar = ({ activeSidebar, setActiveSidebar }) => {
                     <div className="topbarIconContainer">
                         <Settings />
                     </div>
-                    <img src="https://wallpapercave.com/wp/wp2030093.jpg" alt="" className="topAvatar" />
+                    <NavLink to="/updateprofile" className="link">
+                        <img src="https://wallpapercave.com/wp/wp2030093.jpg" alt="" className="topAvatar" />
+                    </NavLink>
                 </div>
             </div>
         </div>

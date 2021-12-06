@@ -1,4 +1,6 @@
 import "./sales.scss";
+import { userAnalyticData, orderAnalyticData, incomeAnalyticData } from '../../Data';
+import Chart from '../../Components/Chart/Chart';
 
 const Sales = ({ activeSidebar }) => {
     return (
@@ -8,6 +10,8 @@ const Sales = ({ activeSidebar }) => {
                     Sales
                 </h2>
             </div>
+            <Chart data={orderAnalyticData} title="Orders In Perticuler Months" grid dataKey="Number Of Orders" />
+
         </div>
     )
 }

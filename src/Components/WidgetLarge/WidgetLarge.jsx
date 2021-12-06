@@ -1,5 +1,5 @@
 import "./Large.scss";
-import { userRows } from '../../Data';
+import { transactionsRows } from '../../Data';
 
 const WidgetLarge = () => {
     const Button = ({ type }) => {
@@ -27,7 +27,7 @@ const WidgetLarge = () => {
                     </th>
                 </tr>
                 {
-                    userRows.map((element) => (
+                    transactionsRows.map((element) => (
                         <tr className="tableRow">
                             <td className="userInfo">
                                 <img src={element.avatar} alt="" />
